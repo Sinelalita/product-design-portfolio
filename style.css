@@ -221,6 +221,9 @@ a { color: inherit; }
   transition: transform 0.4s;
 }
 .card:hover .card-img img { transform: scale(1.04); }
+.card-img.fit { aspect-ratio: auto !important; min-height: 0 !important; background: #dfe5ef; display: grid; place-items: center; padding: clamp(14px, 2.5vw, 32px); }
+.card-img.fit img { height: auto; object-fit: contain; border: var(--thin); box-shadow: 6px 6px 0 var(--ink); background: #fff; }
+.card:hover .card-img.fit img { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--ink); }
 .card-body {
   display: flex;
   flex-direction: column;
@@ -414,6 +417,9 @@ footer {
 
 .cs-cover { border-bottom: var(--line); background: var(--ink); }
 .cs-cover img { width: 100%; max-height: 78vh; object-fit: cover; }
+/* screenshot covers: show the whole frame, never crop the key visual */
+.cs-cover.screen { background: #dfe5ef; padding: clamp(16px, 4vw, 56px); }
+.cs-cover.screen img { max-height: none; object-fit: contain; max-width: 1240px; margin: 0 auto; border: var(--line); box-shadow: 10px 10px 0 var(--ink); background: #fff; }
 
 .tldr {
   display: grid;
@@ -495,7 +501,7 @@ figcaption {
   color: var(--muted);
 }
 .split figure { padding: 0; display: flex; flex-direction: column; justify-content: center; }
-.split figure img { flex: 1; object-fit: cover; }
+.split figure img { flex: none; object-fit: contain; }
 figure img.stacked { border-top: var(--thin); }
 
 .img-row { display: grid; grid-template-columns: repeat(3, 1fr); border-top: var(--line); }
@@ -593,5 +599,6 @@ figure img.stacked { border-top: var(--thin); }
 /* two-up figure row */
 .img-row-2 { grid-template-columns: 1fr 1fr; }
 .img-row-2 figure { border-top: 0; display: flex; flex-direction: column; }
-.img-row-2 img { aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; background: #fff; flex: 1; }
+.img-row-2 img { aspect-ratio: auto; height: auto; object-fit: contain; background: #fff; flex: none; }
+.img-row-2 figure { justify-content: space-between; }
 @media (max-width: 860px) { .img-row-2 { grid-template-columns: 1fr; } }
