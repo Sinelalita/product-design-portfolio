@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ditto — Lalita Mahaisiriyodom</title>
+  <meta name="description" content="Case study: interaction design for Ditto, a Digital Product School × SAP tool that turns a recorded or described workflow into a report and a tested AI skill." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23ff4f00'/><text x='50' y='74' font-size='70' font-family='Arial Black,Arial' font-weight='900' text-anchor='middle'>L</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="bar">
+    <a class="home" href="../index.html">LALITA.M</a>
+    <nav class="mono">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a class="cta" href="../index.html#contact">Contact ↘</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="cs-crumb mono">
+        <a href="../index.html#work">← All work</a>
+        <span>Case 01 / 04</span>
+      </div>
+      <h1 class="cs-title">Teach AI your job, <span class="hl">without</span> knowing AI</h1>
+      <p class="cs-sub">Interaction design for Ditto: show it a repetitive task once, and get a report your colleagues can follow plus a tested skill your AI assistant can run.</p>
+      <div class="cs-meta">
+        <div><span class="label">Role</span><p>Interaction designer, joined in week 8 of 12</p></div>
+        <div><span class="label">Team</span><p>PM + AI engineers · challenge partner SAP</p></div>
+        <div><span class="label">Timeline</span><p>Nov 2026 · Digital Product School Batch 27</p></div>
+        <div><span class="label">I did</span><p>Value proposition, flows, UI, landing page, design in code</p></div>
+      </div>
+    </section>
+
+    <div class="cs-cover"><img src="../img/ditto-landing.jpg" alt="Ditto landing page: Show it once. Never explain it again." /></div>
+
+    <section class="tldr">
+      <div>
+        <h3>The problem</h3>
+        <p>Testers got lost at the start and at the hand-off. Most had never heard of an AI "skill", and some feared AI would replace them.</p>
+      </div>
+      <div>
+        <h3>What I did</h3>
+        <p>Reframed Ditto for AI novices, redesigned the capture-to-skill flow in two iterations and built the public landing page.</p>
+      </div>
+      <div>
+        <h3>Outcome</h3>
+        <p>Two design iterations and showditto.de shipped by me in the production code: 38 commits in about 2.5 weeks.</p>
+      </div>
+    </section>
+
+    <!-- 01 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">01</span><h2>Context</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">SAP asked: can we create a new way into its AI skill library, one that captures what a user actually does?</p>
+          <p>Finance, HR and controlling experts repeat the same tasks every month: reconciliations, accruals, reports. The knowledge lives in their heads.</p>
+          <p>Ditto lets them <strong>show a task once</strong>, by recording their screen or just describing it. AI extracts the steps, asks about rules and exceptions, and produces two things: a report a colleague can follow, and a skill an AI assistant can run.</p>
+          <p>I joined the team in week 8 of 12, after a team change, with one month to go before the final show.</p>
+        </div>
+        <figure>
+          <img src="../img/ditto-how-it-works.jpg" alt="How Ditto works: show it, check what Ditto understood, hand it off" />
+          <figcaption>Show → check → hand off</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">02</span><h2>What I found when I joined</h2></div>
+      <div class="steps">
+        <div>
+          <span class="k">Onboarding</span>
+          <h4>Lost at the start</h4>
+          <p>Testers opened the tool without knowing what it would do for them or what to expect.</p>
+        </div>
+        <div>
+          <span class="k">Jargon</span>
+          <h4>"What's a skill file?"</h4>
+          <p>End users had never heard of skills, and got lost at the download, the most important step.</p>
+        </div>
+        <div>
+          <span class="k">Trust</span>
+          <h4>Fear, not friction</h4>
+          <p>The target users can be sceptical of AI and protective of their own workflow. Some worry about their job.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">03</span><h2>Reframe: from performer to supervisor</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Two days in, I proposed a new value proposition for AI novices: Ditto is here to help you, not replace you.</p>
+          <ul>
+            <li>The user's role moves from <strong>performer</strong> of repetitive work to <strong>supervisor</strong> of it: AI prepares, the person approves.</li>
+            <li>An <strong>onboarding first page</strong> that says what Ditto does and what to expect.</li>
+            <li><strong>Show the gain</strong>: contrast the long manual workflow with what AI can take over.</li>
+            <li>Keep the technical part in the background. The report comes first, the skill file is for the assistant.</li>
+          </ul>
+          <p>SAP's team called encouraging people who are afraid of these tools "a very good opportunity".</p>
+        </div>
+        <figure>
+          <img src="../img/ditto-what-you-get.jpg" alt="What you get: a report for colleagues, where AI can take over, nothing to write down, a tested skill" />
+          <figcaption>The reframe, written into the product's promise</figcaption>
+        </figure>
+      </div>
+      <div class="pull">
+        <blockquote>You don't need to know how to automate. You just need to know your job.</blockquote>
+        <cite class="mono">— showditto.de</cite>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">04</span><h2>Redesigning the flow, twice</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Iterations 4 and 5 went through every step of the flow.</p>
+          <ul>
+            <li><strong>Welcome:</strong> a first screen with the value proposition and one clear call to action.</li>
+            <li><strong>Capture:</strong> record, describe, upload a transcript or reuse old docs. "Rough is fine". A floating recording bar with Delete and Finish, and a privacy note before recording.</li>
+            <li><strong>Clarify:</strong> follow-up questions with answer chips instead of copy-paste, an honest "Captured" status and one question count.</li>
+            <li><strong>Review:</strong> a full-width workflow canvas. Anything AI <strong>wasn't sure about</strong> is tagged "To check" in yellow, and handovers between people stand out.</li>
+            <li><strong>Test &amp; hand off:</strong> example test cases, approval asked once instead of per step, the skill file and report side by side.</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="../img/ditto-app-1.png" alt="Ditto app capture screen" />
+          <figcaption>Capture: show it however you like</figcaption>
+        </figure>
+      </div>
+      <div class="img-row img-row-2">
+        <figure><img src="../img/ditto-app-2.png" alt="Ditto app clarifying questions" /><figcaption>Clarify the rules and exceptions</figcaption></figure>
+        <figure><img src="../img/ditto-app-3.png" alt="Ditto check panel: What we weren't sure about" /><figcaption>Check: "What we weren't sure about", one item at a time</figcaption></figure>
+      </div>
+      <figure>
+        <img src="../img/ditto-app-review.png" alt="Ditto workflow review canvas with steps, tools and a To check flag" />
+        <figcaption>Review: every step, tool and handover on one canvas. Uncertain steps get a yellow flag</figcaption>
+      </figure>
+    </section>
+
+    <!-- 05 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">05</span><h2>Designing in the code</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">With weeks, not months, left, I skipped the hand-off and shipped my designs directly in the React + SAP UI5 codebase.</p>
+          <p>I designed and built <strong>showditto.de</strong>, the public landing page, and moved the product to /app behind it. Then I implemented both design iterations in the product myself, working with AI coding tools.</p>
+          <p>Design feedback from a test in the morning could be live in the afternoon. The engineers stayed focused on skill quality.</p>
+        </div>
+        <div class="prose">
+          <p class="lead">What I learned</p>
+          <ul>
+            <li><strong>For AI novices, design for trust first.</strong> Being honest about what AI isn't sure of makes people more confident, not less.</li>
+            <li>Lead with the outcome people understand (a report a colleague can follow) before the one they don't (a skill file).</li>
+            <li>Joining late is fine if you onboard through the research: I read the team's interview notes before touching a screen.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="teleops.html">
+      <div><span class="mono">Next case · 02</span><div class="t">One platform, every robot</div></div>
+      <span class="arrow">→</span>
+    </a>
+  </main>
+
+  <footer class="mono">
+    <span>© 2026 Lalita Mahaisiriyodom</span>
+    <a href="https://showditto.de" target="_blank" rel="noopener">showditto.de ↗</a>
+  </footer>
+</body>
+</html>
