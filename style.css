@@ -616,3 +616,8 @@ figure img.stacked { border-top: var(--thin); }
   .gallery.cols-2, .gallery.cols-3 { grid-template-columns: 1fr; }
   .gallery figure + figure { border-left: 0; border-top: var(--line); }
 }
+
+/* framed full-width product shot */
+.shot { border-top: var(--line); background: #dfe5ef; padding: clamp(16px, 4vw, 56px); }
+.shot img { max-width: 1240px; margin: 0 auto; border: var(--line); box-shadow: 10px 10px 0 var(--ink); background: #fff; }
+.shot figcaption { max-width: 1240px; margin: 18px auto 0; padding: 0; border: 0; color: var(--ink); }
