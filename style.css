@@ -602,3 +602,17 @@ figure img.stacked { border-top: var(--thin); }
 .img-row-2 img { aspect-ratio: auto; height: auto; object-fit: contain; background: #fff; flex: none; }
 .img-row-2 figure { justify-content: space-between; }
 @media (max-width: 860px) { .img-row-2 { grid-template-columns: 1fr; } }
+
+/* generic gallery: whole images, never cropped */
+.gallery { display: grid; border-top: var(--line); }
+.gallery.cols-2 { grid-template-columns: repeat(2, 1fr); }
+.gallery.cols-3 { grid-template-columns: repeat(3, 1fr); }
+.gallery figure { border-top: 0; display: flex; flex-direction: column; justify-content: space-between; background: #fff; }
+.gallery figure + figure { border-left: var(--line); }
+.gallery img { width: 100%; height: auto; object-fit: contain; flex: 1; padding: clamp(8px, 1.5vw, 20px); background: #fff; }
+.cs-strip { border-top: 0; border-bottom: var(--line); }
+.cs-strip figcaption { font-weight: 500; color: var(--ink); }
+@media (max-width: 860px) {
+  .gallery.cols-2, .gallery.cols-3 { grid-template-columns: 1fr; }
+  .gallery figure + figure { border-left: 0; border-top: var(--line); }
+}

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accident Busters — Lalita Mahaisiriyodom</title>
+  <meta name="description" content="Case study: designing a danger-zone map for road operators from connected-car data, with BMW, AISIN and LSBG at Digital Product School." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23ff4f00'/><text x='50' y='74' font-size='70' font-family='Arial Black,Arial' font-weight='900' text-anchor='middle'>L</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="bar">
+    <a class="home" href="../index.html">LALITA.M</a>
+    <nav class="mono">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a class="cta" href="../index.html#contact">Contact ↘</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="cs-crumb mono">
+        <a href="../index.html#work">← All work</a>
+        <span>Case 02 / 05</span>
+      </div>
+      <h1 class="cs-title">Find the danger <span class="hl">before</span> the accident</h1>
+      <p class="cs-sub">Turning connected-car data into a map that shows road operators where accidents are likely to happen next.</p>
+      <div class="cs-meta">
+        <div><span class="label">Role</span><p>Sole designer in a cross-functional team</p></div>
+        <div><span class="label">Partners</span><p>BMW, AISIN &amp; LSBG (Hamburg's road authority)</p></div>
+        <div><span class="label">Timeline</span><p>Jan – Apr 2022 · Digital Product School</p></div>
+        <div><span class="label">I did</span><p>Research, concept, sketches, wireframes, user tests, UI</p></div>
+      </div>
+    </section>
+
+    <section class="gallery cols-3 cs-strip">
+      <figure><img src="../img/ab-filter-sketch.jpg" alt="Paper sketch and first wireframe of the accident map filters" /><figcaption>01 · Sketch</figcaption></figure>
+      <figure><img src="../img/ab-filter-wire.jpg" alt="Wireframe of the statistic map of accidents with filters" /><figcaption>02 · Wireframe</figcaption></figure>
+      <figure><img src="../img/ab-filter-hifi.jpg" alt="High-fidelity map of Hamburg with accident points and filters" /><figcaption>03 · Hi-fi</figcaption></figure>
+    </section>
+
+    <section class="tldr">
+      <div>
+        <h3>The problem</h3>
+        <p>Road operators react to accidents after they happen, using police reports that arrive late and say little about near misses.</p>
+      </div>
+      <div>
+        <h3>What I did</h3>
+        <p>As the only designer, I took the team from paper sketches to a tested, hi-fi tool for finding and prioritising dangerous spots.</p>
+      </div>
+      <div>
+        <h3>Outcome</h3>
+        <p>A working prototype for Hamburg that combines accidents, near misses from car data, citizen reports and roadworks into danger zones.</p>
+      </div>
+    </section>
+
+    <!-- 01 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">01</span><h2>Context</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Modern cars notice danger long before an accident: hard braking, swerving, slippery roads.</p>
+          <p>BMW and AISIN wanted to know if this connected-car data could make roads safer. LSBG, the authority that runs Hamburg's roads, was the user we designed for.</p>
+          <p>Today, road maintenance officers mostly work from <strong>police accident records</strong>. By the time a spot shows up there, people have already been hurt.</p>
+          <p>Our idea: combine accidents with <strong>near misses</strong> from car sensors, so officers can see where the next accident is likely, and act first.</p>
+        </div>
+        <figure>
+          <img src="../img/ab-heatmap.jpg" alt="Wireframe of an accident heatmap over the city" />
+          <figcaption>Early concept: where do accidents cluster?</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">02</span><h2>Sketch first, fast</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">With engineers and data scientists waiting for direction, I started on paper.</p>
+          <p>Quick sketches let the team agree on the flow in hours, not days: how an officer gets in, what they look for, and how they report a problem.</p>
+          <p>Paper also made it obvious the concept was unfinished, so people gave honest feedback instead of polishing details too early.</p>
+        </div>
+        <figure>
+          <img src="../img/ab-sketch-signup.jpg" alt="Paper sketch of a sign-up screen on a laptop" />
+          <figcaption>Paper prototype, tested before any pixels</figcaption>
+        </figure>
+      </div>
+      <section class="gallery cols-3">
+        <figure><img src="../img/ab-sketch-welcome.jpg" alt="Sketch: welcome screen" /><figcaption>Welcome</figcaption></figure>
+        <figure><img src="../img/ab-sketch-options.jpg" alt="Sketch: contact options" /><figcaption>Choose a channel</figcaption></figure>
+        <figure><img src="../img/ab-sketch-input.jpg" alt="Sketch: message form" /><figcaption>Send a report</figcaption></figure>
+      </section>
+    </section>
+
+    <!-- 03 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">03</span><h2>Test with a real scenario</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Every test started the same way: "Imagine yourself being a road maintenance officer…"</p>
+          <p>Instead of asking people what they thought of screens, I gave them a job to do: <strong>find the accident-prone areas on the map</strong> and decide what to fix.</p>
+          <p>The wireframes were clickable inside the real app, so we could test the flow end to end while the data pipeline was still being built.</p>
+          <ul>
+            <li>Officers needed filters that match how they think: time of day, weather, light, road condition.</li>
+            <li>A list of accidents wasn't enough. They wanted to know <strong>how dangerous</strong> a place is and whether it's getting worse.</li>
+            <li>Reports had to lead to an action, not just a number.</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="../img/ab-usertest.jpg" alt="User test start screen: Imagine yourself being a road maintenance officer" />
+          <figcaption>The scenario that opened every user test</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">04</span><h2>From report to recommendation</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">The "report" changed most between iterations.</p>
+          <ul>
+            <li><strong>V1</strong>: a severity report per street: accidents, near misses, roadworks and a danger score.</li>
+            <li><strong>V2</strong>: a scannable table with a <strong>proposal</strong>, e.g. more street lights where most accidents happen at night.</li>
+            <li><strong>Final</strong>: a details page for each danger zone, with its danger level, recent accidents, how it changed over time, recent roadworks and recommendations.</li>
+          </ul>
+          <p>The map itself became a live overview of danger zones, with a satellite view to see the actual junction.</p>
+        </div>
+        <figure>
+          <img src="../img/ab-report-v1.jpg" alt="Severity area report, first version" />
+          <figcaption>V1: severity area report</figcaption>
+          <img class="stacked" src="../img/ab-report-v2.jpg" alt="Report as a table with a proposal" />
+          <figcaption>V2: a table that ends in a proposal</figcaption>
+        </figure>
+      </div>
+      <section class="gallery cols-2">
+        <figure><img src="../img/ab-details-map.jpg" alt="Satellite map of a junction with danger zones and accident counts" /><figcaption>Danger zones on the satellite view</figcaption></figure>
+        <figure><img src="../img/ab-details-accidents.png" alt="Recent accidents list in German" /><figcaption>Recent accidents at this spot</figcaption></figure>
+      </section>
+      <section class="gallery cols-2">
+        <figure><img src="../img/ab-details-evolution.png" alt="Bar chart: danger level by month" /><figcaption>Is it getting worse? Danger level over time</figcaption></figure>
+        <figure><img src="../img/ab-popup.jpg" alt="Map popup with accident and roadworks details for a street" /><figcaption>Street details right on the map</figcaption></figure>
+      </section>
+    </section>
+
+    <!-- 05 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">05</span><h2>Outcome &amp; learnings</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Outcome</p>
+          <ul>
+            <li>A working prototype for Hamburg, in German, built on real data: police accident records, <strong>near misses detected from BMW connected-car data</strong>, citizen reports and roadworks.</li>
+            <li>Danger zones that officers can filter, compare and drill into, ending in concrete recommendations.</li>
+            <li>A design process the whole team could follow: sketch, test with a scenario, iterate weekly.</li>
+          </ul>
+        </div>
+        <div class="prose">
+          <p class="lead">What I learned</p>
+          <ul>
+            <li><strong>Data products need a "so what".</strong> A map full of dots impresses; a recommendation gets used.</li>
+            <li>Scenario-based tests reveal what people need to <em>do</em>, not just what they like.</li>
+            <li>As the only designer, my sketches became the team's shared language with engineers and data scientists.</li>
+          </ul>
+        </div>
+      </div>
+      <figure>
+        <img src="../img/ab-login-hifi.jpg" alt="Hi-fi login page in German: Let's improve road safety with our data" />
+        <figcaption>"Let's improve road safety with our data": the final login page for LSBG</figcaption>
+      </figure>
+    </section>
+
+    <a class="next" href="teleops.html">
+      <div><span class="mono">Next case · 03</span><div class="t">One platform, every robot</div></div>
+      <span class="arrow">→</span>
+    </a>
+  </main>
+
+  <footer class="mono">
+    <span>© 2026 Lalita Mahaisiriyodom</span>
+    <a href="mailto:sinelalita.m@gmail.com">sinelalita.m@gmail.com</a>
+  </footer>
+</body>
+</html>
