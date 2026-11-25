@@ -37,11 +37,7 @@
       </div>
     </section>
 
-    <section class="gallery cols-3 cs-strip">
-      <figure><img src="../img/ab-filter-sketch.jpg" alt="Paper sketch and first wireframe of the accident map filters" /><figcaption>01 · Sketch</figcaption></figure>
-      <figure><img src="../img/ab-filter-wire.jpg" alt="Wireframe of the statistic map of accidents with filters" /><figcaption>02 · Wireframe</figcaption></figure>
-      <figure><img src="../img/ab-final-map.jpg" alt="Final design: map of danger zones coloured by critical level, with a ranked list of streets" /><figcaption>03 · Final design</figcaption></figure>
-    </section>
+    <div class="cs-cover"><img src="../img/ab-final-map.jpg" alt="Final design: map of danger zones coloured by critical level, with a ranked list of streets" /></div>
 
     <section class="tldr">
       <div>
@@ -78,22 +74,20 @@
     <!-- 02 -->
     <section class="chapter">
       <div class="chapter-head"><span class="n">02</span><h2>Sketch first, fast</h2></div>
-      <div class="split">
-        <div class="prose">
+      <div class="prose">
           <p class="lead">With engineers and data scientists waiting for direction, I started on paper.</p>
           <p>Quick sketches let the team agree on the flow in hours, not days: how an officer gets in, what they look for, and how they report a problem.</p>
           <p>Paper also made it obvious the concept was unfinished, so people gave honest feedback instead of polishing details too early.</p>
-        </div>
-        <figure>
-          <img src="../img/ab-sketch-signup.jpg" alt="Paper sketch of a sign-up screen on a laptop" />
-          <figcaption>Paper prototype, tested before any pixels</figcaption>
-        </figure>
       </div>
-      <section class="gallery cols-3">
+      <div class="thumbs">
+        <span class="mono thumbs-label">Process · paper prototypes</span>
+        <figure><img src="../img/ab-sketch-signup.jpg" alt="Paper sketch of a sign-up screen on a laptop" /><figcaption>Sign up</figcaption></figure>
         <figure><img src="../img/ab-sketch-welcome.jpg" alt="Sketch: welcome screen" /><figcaption>Welcome</figcaption></figure>
         <figure><img src="../img/ab-sketch-options.jpg" alt="Sketch: contact options" /><figcaption>Choose a channel</figcaption></figure>
         <figure><img src="../img/ab-sketch-input.jpg" alt="Sketch: message form" /><figcaption>Send a report</figcaption></figure>
-      </section>
+        <figure><img src="../img/ab-filter-sketch.jpg" alt="Sketch and first wireframe of the map filters" /><figcaption>Map filters</figcaption></figure>
+        <figure><img src="../img/ab-filter-wire.jpg" alt="Wireframe of the accident map with filters" /><figcaption>Wireframe</figcaption></figure>
+      </div>
     </section>
 
     <!-- 03 -->
@@ -120,8 +114,7 @@
     <!-- 04 -->
     <section class="chapter">
       <div class="chapter-head"><span class="n">04</span><h2>From report to recommendation</h2></div>
-      <div class="split">
-        <div class="prose">
+      <div class="prose">
           <p class="lead">The "report" changed most between iterations.</p>
           <ul>
             <li><strong>V1</strong>: a severity report per street: accidents, near misses, roadworks and a danger score.</li>
@@ -129,18 +122,11 @@
             <li><strong>Final</strong>: a page for each danger zone that ends in <strong>Report &amp; Request</strong>, with insights such as "80% happened at night, while the average is 60%".</li>
           </ul>
           <p>The map became the starting point: danger zones coloured by how critical they are, next to a ranked list of streets with hard braking, severe injuries, main accident type and trend.</p>
-        </div>
-        <figure>
-          <img src="../img/ab-report-v1.jpg" alt="Severity area report, first version" />
-          <figcaption>V1: severity area report</figcaption>
-          <img class="stacked" src="../img/ab-report-v2.jpg" alt="Report as a table with a proposal" />
-          <figcaption>V2: a table that ends in a proposal</figcaption>
-        </figure>
       </div>
-      <figure class="shot">
-        <img src="../img/ab-final-map.jpg" alt="Final design of the Explore map: danger-zone clusters by critical level, a legend of accident types and a ranked list of streets" />
-        <figcaption>Explore: where should I look first? Danger zones by critical level, ranked by street</figcaption>
-      </figure>
+      <section class="gallery cols-2">
+        <figure><img src="../img/ab-report-v1.jpg" alt="Severity area report, first version" /><figcaption>V1 · Severity area report</figcaption></figure>
+        <figure><img src="../img/ab-report-v2.jpg" alt="Report as a table with a proposal" /><figcaption>V2 · A table that ends in a proposal</figcaption></figure>
+      </section>
       <figure class="shot">
         <img src="../img/ab-final-detail.png" alt="Final design of a danger zone page: key numbers, accident types, trends, accident records, roadworks, citizen complaints, driver speeds, and a Report and Request form" />
         <figcaption>One danger zone: the numbers, the accident records, roadworks, citizen complaints and driver speeds, ending in Report &amp; Request</figcaption>
