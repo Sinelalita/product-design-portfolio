@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Teleops — Lalita Mahaisiriyodom</title>
+  <meta name="description" content="Case study: researching and designing one teleoperation platform for three different robots at AI & Robotics Ventures." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23ff4f00'/><text x='50' y='74' font-size='70' font-family='Arial Black,Arial' font-weight='900' text-anchor='middle'>S</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="bar">
+    <a class="home" href="../index.html">SINE.M</a>
+    <nav class="mono">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a class="cta" href="../index.html#contact">Contact ↘</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="cs-crumb mono">
+        <a href="../index.html#work">← All work</a>
+        <span>Case 01 / 03</span>
+      </div>
+      <h1 class="cs-title">One platform to drive <span class="hl">every</span> robot</h1>
+      <p class="cs-sub">Researching and designing a shared teleoperation platform for drones, boats and robot arms at AI &amp; Robotics Ventures.</p>
+      <div class="cs-meta">
+        <div><span class="label">Role</span><p>Sole UX researcher &amp; designer</p></div>
+        <div><span class="label">Team</span><p>Robotics engineers from 3 product teams + PM</p></div>
+        <div><span class="label">Timeline</span><p>2021 · fully remote during COVID-19 lockdown</p></div>
+        <div><span class="label">I did</span><p>Research, product strategy, IA, wireframes, UI</p></div>
+      </div>
+    </section>
+
+    <div class="cs-cover"><img src="../img/teleops-hero.jpg" alt="Teleops dashboard with live drone camera feed, map and robot telemetry" /></div>
+
+    <section class="tldr">
+      <div>
+        <h3>The problem</h3>
+        <p>Every robot team was building its own operating software — solving the same problems three times.</p>
+      </div>
+      <div>
+        <h3>What I did</h3>
+        <p>Interviewed engineers, mapped how each robot is operated today, found the shared patterns and designed one platform around them.</p>
+      </div>
+      <div>
+        <h3>Outcome</h3>
+        <p>Three teams aligned on one feature roadmap, one information architecture and one set of UI components.</p>
+      </div>
+    </section>
+
+    <!-- 01 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">01</span><h2>Context</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">The company was growing a family of robots, and each one came with its own control software.</p>
+          <p>A drone docking station, an underwater explorer and a robotic arm were each developed by a separate team. Each team needed a way to see, steer and monitor its robot remotely.</p>
+          <p>Teams were all trying to solve <strong>overlapping problems</strong>: live video, maps, telemetry, mission planning. Building it once, together, would be faster and give operators one consistent tool.</p>
+        </div>
+        <figure>
+          <img src="../img/teleops-products.jpg" alt="Screens of the existing robot operating software" />
+          <figcaption>The existing, separate operating tools</figcaption>
+        </figure>
+      </div>
+      <div class="img-row">
+        <img src="../img/robot-drone.jpg" alt="Drone" />
+        <img src="../img/robot-boat.jpg" alt="Autonomous boat" />
+        <img src="../img/robot-arm.jpg" alt="Robotic arm on a tracked base" />
+      </div>
+    </section>
+
+    <!-- 02 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">02</span><h2>How I approached it</h2></div>
+      <div class="steps">
+        <div>
+          <span class="k">Understand</span>
+          <h4>Learn the robots</h4>
+          <p>Interviewed engineers from each team and mapped the as-is journey of operating each robot to find gaps.</p>
+        </div>
+        <div>
+          <span class="k">Strategy</span>
+          <h4>Find the overlap</h4>
+          <p>Grouped requirements into shared patterns and prioritized what the platform had to do for all teams.</p>
+        </div>
+        <div>
+          <span class="k">Design &amp; iterate</span>
+          <h4>Build it with engineers</h4>
+          <p>Weekly sessions with engineers to refine wireframes, then turned them into UI components and screens.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 03 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">03</span><h2>Research: same goals, different robots</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">I had no robotics background, so I started by learning how engineers actually operate their robots.</p>
+          <p>I mapped the as-is journeys for the existing tools, like Dronebox and Explorer, step by step.</p>
+          <p>Laid side by side, the journeys showed that <strong>most steps shared the same goal</strong>, even when the robots were completely different: connect, check status, plan a mission, watch the feed, react to alerts.</p>
+          <p>That overlap became the backbone of the platform.</p>
+        </div>
+        <figure>
+          <img src="../img/teleops-asis-1.jpg" alt="As-is journey map for Dronebox" />
+          <figcaption>As-is journey: Dronebox</figcaption>
+          <img src="../img/teleops-asis-2.jpg" alt="As-is journey map for Explorer" class="stacked" />
+          <figcaption>As-is journey: Explorer</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- 04 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">04</span><h2>Strategy: a roadmap everyone agreed on</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Each team wanted something different from the platform. I needed one plan that worked for all of them.</p>
+          <ul>
+            <li>Listed every team's requirements and goals in one place.</li>
+            <li>Clustered them into shared capabilities: login, robot dashboard, waypoint navigation, mission planner, fleet management, data storage.</li>
+            <li>Sequenced them with the team by <strong>technical dependency and team capacity</strong> into Phase 0, Release 1 and Release 2.</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="../img/teleops-roadmap.jpg" alt="Feature roadmap across Phase 0, Release 1 and Release 2" />
+          <figcaption>Feature roadmap: Phase 0 → Release 2</figcaption>
+        </figure>
+      </div>
+      <figure>
+        <img src="../img/teleops-ia.jpg" alt="Information architecture of the teleoperation platform" />
+        <figcaption>Information architecture: features, user stories and content hierarchy in one view</figcaption>
+      </figure>
+      <div class="pull">
+        <blockquote>It gave us the ability to clarify and discuss based on concrete materials, and to see how each component relates in the bigger picture.</blockquote>
+        <cite class="mono">— Product Manager</cite>
+      </div>
+    </section>
+
+    <!-- 05 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">05</span><h2>Design: wireframes as a shared language</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Wireframes did more than describe screens. They became how engineers talked about constraints with each other.</p>
+          <p>Every week I met with engineers to turn technical requirements into interfaces they could react to. A wireframe made questions concrete: <em>what does an operator need to see when the connection drops?</em></p>
+          <p>Once flows were stable, I turned them into a dark, high-contrast UI built for long monitoring sessions, with live video front and center and telemetry around it.</p>
+        </div>
+        <figure>
+          <img src="../img/teleops-wireframes.jpg" alt="Wireframes of the teleoperation platform" />
+          <figcaption>Wireframes iterated weekly with robotics engineers</figcaption>
+        </figure>
+      </div>
+      <div class="pull">
+        <blockquote>These wireframes truly helped us discuss high-level technical requirements and constraints with each other in the team.</blockquote>
+        <cite class="mono">— Robotics Engineer</cite>
+      </div>
+      <figure>
+        <img src="../img/teleops-ui.jpg" alt="High-fidelity Teleops interface screens for different robots" />
+        <figcaption>High-fidelity UI: one system, adapted to each robot</figcaption>
+      </figure>
+    </section>
+
+    <!-- 06 -->
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">06</span><h2>Outcome &amp; learnings</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Outcome</p>
+          <ul>
+            <li>Three robot teams aligned on <strong>one shared roadmap</strong> instead of three separate tools.</li>
+            <li>Documentation and visuals became the reference for sprint planning with engineers and the PM.</li>
+            <li>The product kept evolving in sprints. I designed the system to leave room for requirements that weren't settled yet.</li>
+          </ul>
+        </div>
+        <div class="prose">
+          <p class="lead">What I learned</p>
+          <ul>
+            <li><strong>Clarity is a design deliverable.</strong> Agreeing on terms and ideas with engineers mattered as much as the screens.</li>
+            <li>Think wider than a screen: the context of a flow, a feature and the operator's situation.</li>
+            <li>You don't need a technical background to design for a technical product, but you do need to do the homework.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="creator-studio.html">
+      <div><span class="mono">Next case · 02</span><div class="t">Creator Studio revamp</div></div>
+      <span class="arrow">→</span>
+    </a>
+  </main>
+
+  <footer class="mono">
+    <span>© 2026 Lalita Mahaisiriyodom</span>
+    <a href="mailto:sinelalita.m@gmail.com">sinelalita.m@gmail.com</a>
+  </footer>
+</body>
+</html>

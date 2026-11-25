@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Creator Studio — Lalita Mahaisiriyodom</title>
+  <meta name="description" content="Case study: a research-led, mobile-first revamp of the TrueID In-Trend creator studio." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23ff4f00'/><text x='50' y='74' font-size='70' font-family='Arial Black,Arial' font-weight='900' text-anchor='middle'>S</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="bar">
+    <a class="home" href="../index.html">SINE.M</a>
+    <nav class="mono">
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#about">About</a>
+      <a class="cta" href="../index.html#contact">Contact ↘</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="cs-hero">
+      <div class="cs-crumb mono">
+        <a href="../index.html#work">← All work</a>
+        <span>Case 02 / 03</span>
+      </div>
+      <h1 class="cs-title">Creator Studio <span class="hl">revamp</span></h1>
+      <p class="cs-sub">Turning a year of user feedback into a mobile-first redesign of how creators write, submit and track content on TrueID In-Trend.</p>
+      <div class="cs-meta">
+        <div><span class="label">Role</span><p>Lead product designer</p></div>
+        <div><span class="label">Team</span><p>PO, front- and back-end devs, 1 UI designer (consulting)</p></div>
+        <div><span class="label">Timeline</span><p>~10 weeks · launched Oct 2020</p></div>
+        <div><span class="label">I did</span><p>Research audit, prioritization, flows, wireframes, UI</p></div>
+      </div>
+    </section>
+
+    <div class="cs-cover"><img src="../img/intrend-hero.jpg" alt="In-Trend creator studio screens on mobile" /></div>
+
+    <section class="tldr">
+      <div>
+        <h3>The problem</h3>
+        <p>A year after launch, creators were tripping over the same issues: forced steps in the wrong order, confusing missions, no way to find their content.</p>
+      </div>
+      <div>
+        <h3>What I did</h3>
+        <p>Audited 3 rounds of past research, prioritized issues with devs on an impact/effort map and redesigned the full creator journey.</p>
+      </div>
+      <div>
+        <h3>Outcome</h3>
+        <p>A content flow that matches how creators actually write, one home for content and missions, and new reward features.</p>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">01</span><h2>Context</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">In-Trend is a user-generated content platform where Thai creators share stories and interests.</p>
+          <ul>
+            <li>Every submission is reviewed by In-Trend editors before it's published.</li>
+            <li>Editors give each creator personal feedback on quality.</li>
+            <li>Creators earn rewards by completing missions.</li>
+          </ul>
+          <p>Creators loved the feedback and the rewards. But after a year, we'd collected a long list of usability issues. It was time to fix the experience as a whole, not one patch at a time.</p>
+        </div>
+        <figure>
+          <img src="../img/intrend-desktop.jpg" alt="Desktop creator studio screens" />
+          <figcaption>Creator Studio, desktop</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">02</span><h2>Start with what we already knew</h2></div>
+      <div class="steps">
+        <div>
+          <span class="k">Jan 2020 · 5 people</span>
+          <h4>Creator dashboard</h4>
+          <p>In-person usability test of the creator portal.</p>
+        </div>
+        <div>
+          <span class="k">Dec 2019 · 9 people</span>
+          <h4>Missions &amp; leaderboard</h4>
+          <p>In-person usability test of daily missions and ranking.</p>
+        </div>
+        <div>
+          <span class="k">Aug 2019 · 4 people</span>
+          <h4>Tags &amp; content template</h4>
+          <p>Guerrilla test of the writing template.</p>
+        </div>
+      </div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Instead of new research, I re-validated a year of findings.</p>
+          <p>I reviewed every past study, kept the issues that were still valid, and sat down with the product owner and developers to <strong>score each one on impact and effort</strong>. That gave us a scope we could actually ship in one iteration.</p>
+        </div>
+        <div class="prose">
+          <p class="lead">Three issues stood out</p>
+          <ul>
+            <li><strong>Title first?</strong> The title was mandatory up front, but creators told us they write it last.</li>
+            <li><strong>Content before admin.</strong> Creators wanted to focus on writing first, and pick cover image and category later.</li>
+            <li><strong>Mission overload.</strong> Too many mission types confused beginners.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">03</span><h2>Design: follow the creator's order</h2></div>
+      <div class="split">
+        <div class="prose">
+          <p class="lead">Most creators visit on their phones, so I designed mobile first.</p>
+          <ul>
+            <li><strong>3-step stepper</strong>: write content and title → add cover and category → preview and submit.</li>
+            <li><strong>Auto-save</strong>, so no draft gets lost on a phone.</li>
+            <li><strong>Caption on cover image</strong>, a feature creators asked for directly.</li>
+            <li>Missions and special missions merged into <strong>one menu</strong>.</li>
+            <li><strong>Status tabs</strong> to find content fast, for example "Amend request" to fix and resubmit.</li>
+            <li>New <strong>tier widget</strong> and <strong>achievement badges</strong> as virtual rewards.</li>
+          </ul>
+        </div>
+        <figure>
+          <img src="../img/intrend-mobile.jpg" alt="Mobile screens of the new creator template" />
+          <figcaption>New mobile creator flow</figcaption>
+        </figure>
+      </div>
+      <div class="pull">
+        <blockquote>I want to be able to create and save my content before thinking about the cover image and its category.</blockquote>
+        <cite class="mono">— Miew, In-Trend creator</cite>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="chapter-head"><span class="n">04</span><h2>What I learned</h2></div>
+      <div class="split">
+        <div class="prose">
+          <ul>
+            <li><strong>Saved-up research is an asset.</strong> Auditing old studies gave us a confident scope without a new research round.</li>
+            <li>Prioritizing <em>with</em> developers, not for them, made the scope realistic from day one.</li>
+          </ul>
+        </div>
+        <div class="prose">
+          <ul>
+            <li>Small ordering changes, like title last, can remove more friction than new features.</li>
+            <li>Rewards only motivate when people understand them: fewer mission types, clearer progress.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <a class="next" href="service-blueprint.html">
+      <div><span class="mono">Next case · 03</span><div class="t">Fixing missing rewards</div></div>
+      <span class="arrow">→</span>
+    </a>
+  </main>
+
+  <footer class="mono">
+    <span>© 2026 Lalita Mahaisiriyodom</span>
+    <a href="mailto:sinelalita.m@gmail.com">sinelalita.m@gmail.com</a>
+  </footer>
+</body>
+</html>
