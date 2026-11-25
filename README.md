@@ -1,6 +1,6 @@
 # sinelalita.github.io
 
-Design portfolio of Lalita 'Sine' Mahaisiriyodom — product designer in Munich.
+Design portfolio of Lalita Mahaisiriyodom — product designer in Munich.
 
 Live: https://sinelalita.github.io
 
