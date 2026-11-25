@@ -362,3 +362,36 @@ figure img.stacked { border-top: var(--thin); }
   .card-img img, .next .arrow { transition: none; }
   html { scroll-behavior: auto; }
 }
+
+/* ---------- what I bring: capability map ---------- */
+.about > div:last-child { display: flex; align-items: flex-start; }
+.about .about-photo { margin-top: 0; width: 100%; }
+.caps { border-top: var(--line); }
+.caps-head { display: grid; grid-template-columns: 1fr 1.6fr; gap: 24px; align-items: baseline; padding: 24px var(--gutter); border-bottom: var(--thin); }
+.caps-head h3 { font-variation-settings: 'wdth' 68; font-stretch: 68%; font-weight: 800; font-size: clamp(26px, 2.6vw, 36px); line-height: 1; }
+.caps-head p { color: var(--muted); font-size: 16px; max-width: 64ch; }
+.cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); }
+.cap { display: flex; flex-direction: column; gap: 10px; padding: 22px var(--gutter) 24px; border-bottom: var(--thin); border-right: var(--thin); }
+.cap:nth-child(3n) { border-right: 0; }
+.cap:nth-last-child(-n + 3) { border-bottom: 0; }
+.cap-top { display: flex; justify-content: space-between; align-items: center; gap: 8px; min-height: 22px; }
+.cap-n { color: var(--accent); font-weight: 500; }
+.cap-demand { background: var(--ink); color: var(--paper); padding: 2px 7px; font-size: 10px; }
+.cap h4 { font-variation-settings: 'wdth' 68; font-stretch: 68%; font-weight: 800; font-size: 23px; line-height: 1.1; }
+.cap p { color: var(--muted); font-size: 15px; line-height: 1.55; }
+.cap-proof { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: auto; padding-top: 6px; }
+.cap-proof .mono { font-size: 10px; color: var(--muted); margin-right: 2px; }
+.cap-proof a { font-family: var(--mono); font-size: 11px; text-transform: uppercase; text-decoration: none; border: var(--thin); padding: 2px 8px; }
+.cap-proof a:hover { background: var(--ink); color: var(--paper); }
+.toolbelt { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 18px var(--gutter); border-top: var(--thin); }
+.toolbelt span:not(.toolbelt-label) { font-family: var(--mono); font-size: 12px; text-transform: uppercase; border: var(--thin); padding: 3px 9px; background: #fff; }
+.toolbelt-label { color: var(--muted); margin-right: 4px; }
+.toolbelt-label:not(:first-child) { margin-left: 18px; }
+@media (max-width: 860px) {
+  .caps-head { grid-template-columns: 1fr; gap: 8px; }
+  .cap-grid { grid-template-columns: 1fr; }
+  .cap { border-right: 0; }
+  .cap:nth-last-child(-n + 3) { border-bottom: var(--thin); }
+  .cap:last-child { border-bottom: 0; }
+  .toolbelt-label:not(:first-child) { margin-left: 0; width: 100%; margin-top: 6px; }
+}
