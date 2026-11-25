@@ -395,3 +395,12 @@ figure img.stacked { border-top: var(--thin); }
   .tool-group { border-right: 0; }
 }
 .tool-group:last-child { border-right: 0; }
+
+/* ---------- big screens: the site becomes a centered 1600px sheet ---------- */
+body > header, body > main, body > footer { max-width: 1600px; margin-inline: auto; }
+main { background: var(--paper); }
+@media (min-width: 1601px) {
+  html { background: #e2dfd8; }
+  body { background: #e2dfd8; }
+  body > header, body > main, body > footer { border-left: var(--line); border-right: var(--line); }
+}
