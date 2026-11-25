@@ -145,8 +145,7 @@ a { color: inherit; }
   height: 100%;
   max-height: 460px;
   object-fit: cover;
-  object-position: 50% 75%;
-  filter: grayscale(1) contrast(1.15);
+  object-position: 50% 30%;
 }
 .hero-photo .tag {
   position: absolute;
@@ -283,6 +282,9 @@ a { color: inherit; }
 .about > div { padding: 32px var(--gutter) 40px; }
 .about > div + div { border-left: var(--line); }
 .about p + p { margin-top: 1em; }
+.about-photo { margin-top: 28px; border: var(--line); }
+.about-photo img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 50% 45%; }
+.about-photo figcaption { border-top: var(--line); }
 .about .big {
   font-size: clamp(22px, 2.3vw, 32px);
   line-height: 1.25;
